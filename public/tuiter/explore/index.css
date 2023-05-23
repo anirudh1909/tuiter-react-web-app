@@ -7,7 +7,17 @@
   border-bottom: 1px solid black;
   padding: 8px;
 }
+.img {
+  width: 1000px;
+  height: 300px;
+  z-index: 0; }
+  
+  .text-over-img {
+  z-index:1;
+  font-size: 2em;
+  margin-top: -55px;
 
+  }
 .wd-bordered-table th {
   background-color: lightgray;
   font-weight: bold;
