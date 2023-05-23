@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuiter - Explore</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="tuiter/explore/index.css">
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="row">
+      
+      <div class="col-md-2"  ></div>
+      <!-- Left column -->
+      <div class="col-md-2">
+        <!-- Sidebar navigation -->
+        <div class="sidebar">
+          <!-- Navigation links -->
+          <ul class="list-group">
+            <a href="../../tuiter/home.html" class="list-group-item"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="../../tuiter/home.html" class="list-group-item"><i class="fas fa-home "></i> <span class ="d-none d-md-none  d-lg-inline">Home</span> </a>
+            <a href="../../tuiter/explore/explore-bootstrap.html" class="list-group-item active"><i class="fa fa-hashtag" aria-hidden="true"></i><span class ="d-none d-md-none  d-lg-inline">Explore</span></a>
+            <a href="../../tuiter/notifications.html" class="list-group-item"><i class="fas fa-bell"></i> <span class ="d-none d-md-none  d-lg-inline">Notifications</span></a>
+            <a href="../../tuiter/messages.html" class="list-group-item"><i class="fas fa-envelope"></i> <span class ="d-none d-md-none  d-lg-inline">Messages</span></a>
+            <a href="../../tuiter/bookmarks/bookmarks-css.html" class="list-group-item"><i class="fas fa-bookmark"></i> <span class ="d-none d-md-none  d-lg-inline">Bookmarks</span></a>
+            <a href="../../tuiter/lists.html" class="list-group-item"><i class="fas fa-list"></i> <span class ="d-none d-md-none  d-lg-inline">Lists</span></a>
+            <a href="../../tuiter/profile.html" class="list-group-item"><i class="fas fa-user"></i> <span class ="d-none d-md-none  d-lg-inline">Profile</span></a>
+            <a href="../../tuiter/navigation.html" class="list-group-item"><i class="fas fa-ellipsis-h"></i> <span class ="d-none  d-lg-inline">More</span></a>
+          </ul>
+          <!-- Tuit button -->
+          <button class="btn btn-primary btn-block rounded-pill mt-3">Tuit</button>
+        </div>
+      </div>
+
+      <!-- Middle column -->
+      <div class="col-md-4">
+        <!-- Search bar -->
+        <div class="input-group mb-3 search-field">
+          <span class="input-group-text bg-white border-end-0 rounded-start rounded-pill"><i class="fas fa-search"></i></span>
+          <input type="text" class="form-control rounded-end rounded-pill" placeholder="Search Twitter" />
+          <span class="text-primary input-group-text bg-white border-0"><i class="fas fa-cog"></i></span>
+        </div>
+        
+        
+      
+        <!-- Tabs -->
+        <ul class="nav nav-tabs mt-3 justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">For You</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trending</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sports</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entertainment</a>
+          </li>
+        </ul>
+      
+        <!-- Image with text -->
+        <div class="image-container mt-3 position-relative">
+          <img src="https://i.redd.it/8xnscaemwf8z.jpg" class="img-fluid" alt="Sample Image"><br/>
+          <div class="wd-img-txt2">
+            <h2>Assignment 2: CSS and Bootstrap</h2>
+          </div>
+        </div>
+      
+        <!-- Tuits list -->
+        <ul class="list-group mt-3">
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-10">
+                <span class="tuit-domain">Trending in Movies</span><br>
+                <span class="tuit-content"><strong>Vijay</strong>#Thalapathy67 <span class="tuit-verified"><i class="fas fa-check-circle"></i></span> 4h</span><br>
+                <span class="tuit-text">Thalapathy67 Title Reveal ‘LEO’ directed by Lokesh Kanagaraj.</span><br>
+                <span class="tuit-tags">173k tweets</span><br>
+              </div>
+              <div class="col-md-2">
+                <img src="https://www.wallsnapy.com/img_gallery/leo-movie-title-design-vijay-8890090.jpg" class="img-thumbnail" alt="NASA" width="144" height="192">
+              </div>
+            </div>
+          </li>
+          <!-- Add more tuits here -->
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-10">
+                <span class="tuit-domain">Trending in Music</span><br>
+                <span class="tuit-content"><strong>Name - </strong>Dua Lipa <span class="tuit-verified"><i class="fas fa-check-circle"></i></span> 4h</span><br>
+                <span class="tuit-text">Dua Lipa for her new single ‘Dance The Night’ from the #Barbie soundtrack.</span><br>
+                <span class="tuit-tags">150k tweets</span><br>
+              </div>
+              <div class="col-md-2">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/dua-lipa-attends-varietys-2nd-annual-hitmakers-brunch-at-news-photo-1604677508.?crop=1xw:0.87967xh;center,top&resize=980:*" class="img-thumbnail" alt="NASA" width="144" height="192">
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-10">
+                <span class="tuit-domain">Web Development</span><br>
+                <span class="tuit-content"><strong>ReactJS </strong><span class="tuit-verified"><i class="fas fa-check-circle"></i></span> 4h</span><br>
+                <span class="tuit-text">React Native is a much smaller target for component libraries than traditional CSS frameworks.</span><br>
+                <span class="tuit-tags">28.6k tweets</span><br>
+              </div>
+              <div class="col-md-2">
+                <img src="https://www.bairesdev.com/wp-content/uploads//2022/06/Picture6-1.svg" class="img-thumbnail" alt="NASA" width="144" height="240">
+              </div>
+            </div>
+          </li>
+          <li class="list-group-item">
+            <div class="row">
+              <div class="col-md-10">
+                <span class="tuit-domain">Trending in NASA</span><br>
+                <span class="tuit-content"><strong>NASA</strong>@Nasa<span class="tuit-verified"><i class="fas fa-check-circle"></i></span> 4h</span><br>
+                <span class="tuit-text">NASA has selected a new mission to help humanity better understand Earth’s dynamic atmosphere – specifically, ice clouds that form at high altitudes throughout tropical and sub-tropical regions.</span><br>
+                <span class="tuit-tags">50.6k tweets</span><br>
+              </div>
+              <div class="col-md-2">
+                <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" class="img-thumbnail" alt="NASA" width="144" height="288">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+            
+<!-- Right column -->
+<div class="col-md-2">
+  <!-- Who to follow list -->
+  <div class=" d-none d-md-none d-lg-inline d-xl-inline ">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-12 ">
+          <h5 class="follow-heading">Who to follow</h5>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://chathamlibrary.librarycalendar.com/sites/default/files/2022-11/java-logo.png" class="rounded-circle" alt="Java" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>Java</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@java</span>
+          </span>
+        </div>
+        <div class="col-md-3" style="padding-left: 0;">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3" >
+          <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/nasa-logo-web-rgb.png" class="rounded-circle" alt="NASA" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>NASA</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@nasa</span>
+          </span>
+        </div>
+        <div class="col-md-3"style="padding-left: 0;">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png" class="rounded-circle" alt="Tesla" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>Tesla</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@tesla</span>
+          </span>
+        </div>
+        <div class="col-md-3"style="padding-left: 0;">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/image8-2.jpg?width=595&height=400&name=image8-2.jpg" class="rounded-circle" alt="Google" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>Google</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@google</span>
+          </span>
+        </div>
+        <div class="col-md-3"style="padding-left: 0;">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://play-lh.googleusercontent.com/kHRf85euDvW-Kg7ThXK2vv-J-Yye9uxoo6GQvUcAwudNRz1sQvXubAl_m2bu6KJofA=s94-rw" class="rounded-circle" alt="Microsoft" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>Microsoft</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@microsoft</span>
+          </span>
+        </div>
+        <div class="col-md-3style="padding-left: 0;"">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="https://1000logos.net/wp-content/uploads/2016/10/Amazon-logo-meaning.jpg" class="rounded-circle" alt="Amazon" width="48" height="48">
+        </div>
+        <div class="col-md-5">
+          <span class="follow-info">
+            <strong>Amazon</strong>
+            <i class="fas fa-check-circle"></i><br>
+            <span class="username">@amazon</span>
+          </span>
+        </div>
+        <div class="col-md-3"style="padding-left: 0;">
+          <button class="btn btn-primary rounded-pill">Follow</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <div class="col-md-2"></div>
+</body>
+</html>
