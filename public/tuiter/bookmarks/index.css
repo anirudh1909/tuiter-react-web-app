@@ -5,6 +5,11 @@
     font-weight: bolder;
     color: black;
   }
+ .other-Page {
+    color: grey;
+    text-decoration: none;
+    
+  }
   
   .grid-container {
     display: grid;
