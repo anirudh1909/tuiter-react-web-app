@@ -1,14 +1,15 @@
 import React from "react";
 const WhoToFollowListItem = (
  {
-   who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa.png' }
+   who = { userName: 'NASA', handle: 'NASA', avatarIcon: 'images/nasa.png' }
  }
 ) => {
  return(
+  <div class="col-12 col-xxl-12 col-xl-12 col-lg-12 d-none d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none">
   <li className="list-group-item">
    <div className="row">
      <div className="col-2">
-       <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`}/>
+       <img className="rounded-circle" height={48} src={`/images/${who.avatarIcon}`} alt="who-to-follow"/>
      </div>
      <div className="col-8">
        <div className="fw-bold">{who.userName}</div>
@@ -19,6 +20,7 @@ const WhoToFollowListItem = (
      </div>
    </div>
   </li>
+  </div>
  );
 };
 export default WhoToFollowListItem;

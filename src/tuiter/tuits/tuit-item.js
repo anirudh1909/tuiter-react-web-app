@@ -4,7 +4,7 @@ import { RxCross2 } from "react-icons/rx";
 import { BsDot } from "react-icons/bs";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-import { deleteTuit } from "../reducers/tuits-reducer";
+import {deleteTuitThunk} from "../services/tuits-thunks";
 
 const tuitItemStyle = {
   display: "flex",
@@ -39,7 +39,7 @@ const tuitTextStyle = {
 function TuitItem({ tuit, onLike }) {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   };
 
   return (
