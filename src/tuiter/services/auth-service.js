@@ -1,7 +1,6 @@
 import axios from "axios";
-const USERS_URL = "https://tuiter-node-server-app-b0z6.onrender.com";
 
-
+const USERS_URL = `https://tuiter-node-server-app-b0z6.onrender.com`;
 
 const api = axios.create({ withCredentials: true });
 
@@ -43,5 +42,3 @@ export const logout = async () => {
       throw new Error('Login failed. Please check your credentials and try again.');
     }
   };
-  
-  

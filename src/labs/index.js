@@ -1,5 +1,3 @@
-import React from "react";
-
 import Nav from "../nav";
 import Assignment3 from "./a3";
 import Assignment4 from "./a4";
@@ -21,4 +19,3 @@ function Labs() {
 }
 
 export default Labs;
-

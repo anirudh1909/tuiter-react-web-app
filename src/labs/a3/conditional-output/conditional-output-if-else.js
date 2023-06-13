@@ -1,5 +1,3 @@
-import React from "react";
-
 const ConditionalOutputIfElse = () => {
     const loggedIn = true;
     if(loggedIn) {
@@ -9,3 +7,4 @@ const ConditionalOutputIfElse = () => {
     }
    };
    export default ConditionalOutputIfElse;
+   

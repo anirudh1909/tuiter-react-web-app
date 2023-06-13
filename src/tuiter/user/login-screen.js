@@ -10,8 +10,8 @@ function LoginScreen() {
  const handleLogin = async () => {
   if (!username || !password) {
     alert("Please provide a username and password.");
-    return;
-    }
+    return;
+    }
   try {
     await dispatch(loginThunk({ username, password }));
     navigate("/tuiter/profile");

@@ -1,16 +1,28 @@
-<html>
-    <head>
-        <!--style>
-            p {
-                background-color: blue;
-                color: white;
-            }
-        </style-->
-        <link href="index.css"
-         rel="stylesheet"/>
-     </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--style>
+        p {
+            background-color: blue;
+            color: white;
+        }
+    </style-->
+    <link href="index.css"
+    rel="stylesheet"/>
+
+      <!--link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+  rel="stylesheet"/>
+  
+ <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+</head>
 <body>
-<h1>Cascading Style Sheets (CSS)</h1>
+
+    <h1>Cascading Style Sheets (CSS)</h1>
 <h2>Style attribute and tag</h2>
 <h3>Style attribute</h3>
 <p style="background-color: blue; color: white">
@@ -73,12 +85,13 @@ rule referring to the P tags
     </div>
    </div>
    <h2>Colors</h2>
-<h3 class="fg-color-blue">Foreground color</h3>
-<p class="fg-color-red">
-  The text in this paragraph is red but
-  <span class="fg-color-green">this text is green</span>
-</p>
-<h3 class="bg-color-blue fg-color-white">Background color</h3>
+   <h3 class="fg-color-blue">Foreground color</h3>
+   <p class="fg-color-red">
+     The text in this paragraph is red but
+     <span class="fg-color-green">this text is green</span>
+   </p>
+
+   <h3 class="bg-color-blue fg-color-white">Background color</h3>
 <p class="bg-color-red fg-color-black">
    This background of this paragraph is red but
    <span class="bg-color-green fg-color-white"> the background
@@ -89,7 +102,7 @@ rule referring to the P tags
    Solid fat red border</p>
 <p class="border-thin border-blue border-dashed">
    Dashed thin blue border</p>
-<h2>Padding</h2>
+   <h2>Padding</h2>
 <div class="padded-top-left border-fat 
             border-red border-solid 
             bg-color-yellow">
@@ -97,37 +110,39 @@ rule referring to the P tags
 </div>
 
 <div class="padded-bottom-right border-fat 
-            border-blue border-solid  bg-color-yellow">
-            Padded bottom right
-          </div>
-          <div class="padding-fat border-fat 
-                      border-yellow border-solid 
-                      bg-color-blue fg-color-white">
-             Padded all around
-          </div>
-          <h2>Margins</h2>
-          <div class="margin-bottom 
-                      padded-top-left 
-                      border-fat border-red 
-                      border-solid 
-                      bg-color-yellow">
-             Margin bottom</div>
-          <div class="margin-right-left 
-                      padded-bottom-right 
-                      border-fat border-blue 
-                      border-solid 
-                      bg-color-yellow">
-             Margin left right
-          </div>
-          <div class="margin-all-around 
-                      padding-fat border-fat 
-                      border-yellow 
-                      border-solid 
-                      bg-color-blue 
-                      fg-color-white">
-             Margin all around
-          </div>
-          <h3>Rounded corners</h3>
+            border-blue border-solid 
+            bg-color-yellow">
+   Padded bottom right
+</div>
+<div class="padding-fat border-fat 
+            border-yellow border-solid 
+            bg-color-blue fg-color-white">
+   Padded all around
+</div>
+<h2>Margins</h2>
+<div class="margin-bottom 
+            padded-top-left 
+            border-fat border-red 
+            border-solid 
+            bg-color-yellow">
+   Margin bottom</div>
+<div class="margin-right-left 
+            padded-bottom-right 
+            border-fat border-blue 
+            border-solid 
+            bg-color-yellow">
+   Margin left right
+</div>
+<div class="margin-all-around 
+            padding-fat border-fat 
+            border-yellow 
+            border-solid 
+            bg-color-blue 
+            fg-color-white">
+   Margin all around
+</div>
+
+<h3>Rounded corners</h3>
 <p class="rounded-corners-top border-thin border-blue border-solid padding-fat">
   Rounded corners on the top
 </p>
@@ -167,7 +182,7 @@ rule referring to the P tags
        Landscape</div>
  <div class="bg-color-red dimension-square">
        Square</div>
-</div>  
+</div>
 <h3>Absolute position</h3>
 <div class="pos-relative">
    <div class="pos-absolute-10-10 
@@ -223,6 +238,7 @@ rule referring to the P tags
    <img class="float-right"      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"/>
    <div class="float-done"></div>
 </div>
+
 <h2>Grid layout</h2>
 <div class="grid-row">
   <div class="grid-col-half-page bg-color-yellow">
@@ -234,35 +250,38 @@ rule referring to the P tags
   </div>
 </div>
 <div class="grid-row">
-  <div class="grid-col-third-page bg-color-green
-              fg-color-white">
-    <h3>Left third</h3>
+    <div class="grid-col-third-page bg-color-green
+                fg-color-white">
+      <h3>Left third</h3>
+    </div>
+    <div class="grid-col-two-thirds-page bg-color-red
+                fg-color-white">
+      <h3>Right two thirds</h3>
+    </div>
   </div>
-  <div class="grid-col-two-thirds-page bg-color-red
-              fg-color-white">
-    <h3>Right two thirds</h3>
+  <div class="grid-row">
+    <div class="grid-col-left-sidebar bg-color-yellow">
+      <h3>Side bar</h3>
+      <p>This is the left sidebar</p>
+    </div>
+    <div class="grid-col-main-content bg-color-blue
+                fg-color-white">
+      <h3>Main content</h3>
+      <p>This is the main content. This is the main content.
+         This is the main content. </p>
+    </div>
+    <div class="grid-col-right-sidebar bg-color-green
+                fg-color-white">
+      <h3>Side bar</h3>
+      <p>This is the right sidebar</p>
+    </div>
   </div>
-</div>
-<div class="grid-row">
-  <div class="grid-col-left-sidebar bg-color-yellow">
-    <h3>Side bar</h3>
-    <p>This is the left sidebar</p>
-  </div>
-  <div class="grid-col-main-content bg-color-blue
-              fg-color-white">
-    <h3>Main content</h3>
-    <p>This is the main content. This is the main content.
-       This is the main content. </p>
-  </div>
-  <div class="grid-col-right-sidebar bg-color-green
-              fg-color-white">
-    <h3>Side bar</h3>
-    <p>This is the right sidebar</p>
-  </div>
-</div>
-<link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
 
-<h2><a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a></h2>
+    <div class="container">
+       <h1>Bootstrap</h1>
+       <p>Welcome to Bootstrap!</p>
+    </div>
+       <h2><a href="https://getbootstrap.com/docs/5.1/layout/grid/">Grid system</a></h2>
 <div class="row">
   <div class="col bg-danger text-white">
      <h3>Left half</h3></div>
@@ -280,8 +299,8 @@ rule referring to the P tags
      <h3>Main content</h3></div>
   <div class="col-2 bg-info">
      <h3>Sidebar</h3></div></div>
-
-     <h2>Responsive grid system</h2>
+    </div>
+    <h2>Responsive grid system</h2>
 <div class="row">
  <div class="col-12 col-md-6 col-xl-3 bg-warning">
   <h3>Column A</h3>
@@ -345,157 +364,149 @@ rule referring to the P tags
    <tr class="table-success"><td colspan="3">Average</td><td>90</td></tr>
    </tfoot>
 </table>
-
 <h2>
-  <a href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables">
-      Responsive tables</a></h2>
-<div class="table-responsive">
- <table class="table">
-   <thead>
-     <tr><th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
-         <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
-         <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
-     </tr>
-   </thead>
-   <tbody>
-     <tr>
-        <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
-        <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
-        <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
-     </tr>
-   </tbody>
- </table>
+    <a href="https://getbootstrap.com/docs/5.1/content/tables/#responsive-tables">
+        Responsive tables</a></h2>
+ <div class="table-responsive">
+   <table class="table">
+     <thead>
+       <tr><th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+           <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+           <th>Very</th><th>long</th><th>set</th><th>of</th><th>columns</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+          <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+          <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+          <td>Very</td><td>long</td><td>set</td><td>of</td><td>columns</td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+ <h2>
+    <a href="https://getbootstrap.com/docs/5.1/components/list-group/">
+        Favorite movies</a>
+ </h2>
+ <ul class="list-group">
+    <li class="list-group-item active">Aliens</li>
+    <li class="list-group-item">Terminator</li>
+    <li class="list-group-item">Blade Runner</li>
+    <li class="list-group-item">Lord of the Ring</li>
+    <li class="list-group-item disabled">Star Wars</li>
+ </ul>
+ <h3>
+    <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons">
+        Favorite books</a>
+ </h3>
+ <div class="list-group">
+   <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active">
+        Dune</a>
+    <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
+        Lord of the Rings</a>
+    <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
+        The Forever War</a>
+    <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
+        2001 A Space Odyssey</a>
+    <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's Game</a>
+ </div>
+ <h2>
+    <h2>
+        <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">
+          Forms
+        </a>
+      </h2>
+      <div class="mb-3">
+        <label for="input1"
+               class="form-label">
+          Email address</label>
+        <input type="email"
+               class="form-control"
+               id="input1"
+               placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="textarea1"
+               class="form-label">
+          Example textarea</label>
+        <textarea class="form-control"
+                  id="textarea1"
+                  rows="3"></textarea>
+      </div>
+        <h3>
+            <a href="https://getbootstrap.com/docs/5.1/forms/select/">
+                Dropdowns</a>
+         </h3>
+         <select class="form-select">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+         </select>
+         <h3>
+            <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
+           </h3>
+           <div class="form-check form-switch">
+            <input class="form-check-input"
+                   type="checkbox"
+                   id="switch1">
+            <label class="form-check-label" for="switch1">
+                Default switch checkbox input</label>
+           </div>
+           <div class="form-check form-switch">
+            <input class="form-check-input"
+                   type="checkbox"
+                   id="switch2"
+                   checked>
+            <label class="form-check-label"
+                   for="switch2">
+                Checked switch checkbox input</label>
+           </div>
+           <div class="form-check form-switch">
+            <input class="form-check-input"
+                   type="checkbox"
+                   id="switch3"
+                   disabled>
+            <label class="form-check-label"
+                   for="switch3">
+                Disabled switch checkbox input</label>
+           </div>
+           <div class="form-check form-switch">
+            <input class="form-check-input"
+                   type="checkbox"
+                   id="switch4"
+                   checked disabled>
+            <label class="form-check-label"
+                   for="switch4">
+                Disabled checked switch checkbox input</label>
+           </div>
+           <h3>
+            <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
+               Range
+            </a>
+           </h3>
+           <label for="range1"
+                 class="form-label">
+            Example range</label>
+           <input type="range"
+                 class="form-range"
+                 min="0"
+                 max="5"
+                 step="0.5"
+                 id="range1"/>
+                 <h3><a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a></h3>
+<div class="input-group mb-3">
+  <span class="input-group-text">$</span>
+  <span class="input-group-text">0.00</span>
+  <input type="text" class="form-control">
 </div>
-
-<h2>
-  <a href="https://getbootstrap.com/docs/5.1/components/list-group/">
-      Favorite movies</a>
-</h2>
-<ul class="list-group">
-  <li class="list-group-item active">Aliens</li>
-  <li class="list-group-item">Terminator</li>
-  <li class="list-group-item">Blade Runner</li>
-  <li class="list-group-item">Lord of the Ring</li>
-  <li class="list-group-item disabled">Star Wars</li>
-</ul>
-
-<h3>
-  <a href="https://getbootstrap.com/docs/5.1/components/list-group/#links-and-buttons">
-      Favorite books</a>
-</h3>
-<div class="list-group">
- <a href="https://en.wikipedia.org/wiki/Dune_(novel)" class="list-group-item list-group-item-action active">
-      Dune</a>
-  <a href="https://en.wikipedia.org/wiki/The_Lord_of_the_Rings" class="list-group-item list-group-item-action">
-      Lord of the Rings</a>
-  <a href="https://en.wikipedia.org/wiki/The_Forever_War" class="list-group-item list-group-item-action">
-      The Forever War</a>
-  <a href="https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)" class="list-group-item list-group-item-action">
-      2001 A Space Odyssey</a>
-  <a href="https://en.wikipedia.org/wiki/Ender%27s_Game" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Ender's Game</a>
-  </div>
-
-  <h2>
-    <a href="https://getbootstrap.com/docs/5.1/forms/form-control/">
-      Forms
-    </a>
-  </h2>
-  <div class="mb-3">
-    <label for="input1"
-           class="form-label">
-      Email address</label>
-    <input type="email"
-           class="form-control"
-           id="input1"
-           placeholder="name@example.com">
-  </div>
-  <div class="mb-3">
-    <label for="textarea1"
-           class="form-label">
-      Example textarea</label>
-    <textarea class="form-control"
-              id="textarea1"
-              rows="3"></textarea>
-  </div>
-
-  <h3>
-    <a href="https://getbootstrap.com/docs/5.1/forms/select/">
-        Dropdowns</a>
- </h3>
- <select class="form-select">
-    <option selected>Open this select menu</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
- </select>
-
- <h3>
-  <a href="https://getbootstrap.com/docs/5.1/forms/checks-radios/#switches">Switches</a>
- </h3>
- <div class="form-check form-switch">
-  <input class="form-check-input"
-         type="checkbox"
-         id="switch1">
-  <label class="form-check-label" for="switch1">
-      Default switch checkbox input</label>
- </div>
- <div class="form-check form-switch">
-  <input class="form-check-input"
-         type="checkbox"
-         id="switch2"
-         checked>
-  <label class="form-check-label"
-         for="switch2">
-      Checked switch checkbox input</label>
- </div>
- <div class="form-check form-switch">
-  <input class="form-check-input"
-         type="checkbox"
-         id="switch3"
-         disabled>
-  <label class="form-check-label"
-         for="switch3">
-      Disabled switch checkbox input</label>
- </div>
- <div class="form-check form-switch">
-  <input class="form-check-input"
-         type="checkbox"
-         id="switch4"
-         checked disabled>
-  <label class="form-check-label"
-         for="switch4">
-      Disabled checked switch checkbox input</label>
- </div>
-
- <h3>
-  <a href="https://getbootstrap.com/docs/5.1/forms/range/#steps">
-     Range
-  </a>
- </h3>
- <label for="range1"
-       class="form-label">
-  Example range</label>
- <input type="range"
-       class="form-range"
-       min="0"
-       max="5"
-       step="0.5"
-       id="range1"/>
- 
-       <h3><a href="https://getbootstrap.com/docs/5.1/forms/input-group/">Addons</a></h3>
-       <div class="input-group mb-3">
-         <span class="input-group-text">$</span>
-         <span class="input-group-text">0.00</span>
-         <input type="text" class="form-control">
-       </div>
-       <div class="input-group">
-         <input type="text" class="form-control">
-         <span class="input-group-text">$</span>
-         <span class="input-group-text">
-           0.00</span>
-       </div>
-
-       <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a></h3>
+<div class="input-group">
+  <input type="text" class="form-control">
+  <span class="input-group-text">$</span>
+  <span class="input-group-text">
+    0.00</span>
+</div>
+<h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a></h3>
 <div class="mb-3 row">
   <label for="email1"
          class="col-sm-2 col-form-label">
@@ -527,7 +538,6 @@ rule referring to the P tags
             rows="3"></textarea>
   </div>
 </div>
-
 <h3><a href="https://getbootstrap.com/docs/5.1/forms/layout/#horizontal-form">Responsive forms</a>
 </h3>
 <form>
@@ -582,22 +592,20 @@ rule referring to the P tags
               type="checkbox" id="r6"/>
          <label class="form-check-label" for="r6">
            Example checkbox</label>
-          </div>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Sign in</button>
-     </form>
-
-       <h3>Overriding Bootstrap style</h3>
-  <button class="btn btn-primary">
-     Regular Bootstrap Button 
-  </button>
-  <br/>
-  <button class="btn btn-primary override-bs">
+     </div>
+   </div>
+ </div>
+ <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+<h3>Overriding Bootstrap style</h3>
+<button class="btn btn-primary">
+    Regular Bootstrap Button
+</button>
+<br/>
+<button class="btn btn-primary override-bs">
     Overriden Button
-  </button>
-  
-     <h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
+</button>
+<h2><a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/">Tabs</a></h2>
 <ul class="nav nav-tabs">
    <li class="nav-item">
        <a class="nav-link active" href="#">Active</a>
@@ -612,7 +620,6 @@ rule referring to the P tags
        <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
    </li>
 </ul>
-
 <h3>
   <a href="https://getbootstrap.com/docs/5.1/components/navs-tabs/#pills">
       Pills
@@ -630,27 +637,26 @@ rule referring to the P tags
   </li>
   <li class="nav-item">
       <a class="nav-link disabled" href="#" tabindex="-1">Disabled</a>
- </li>
+  </li>
 </ul>
-
 <h2>
-  <a href="https://getbootstrap.com/docs/5.1/components/card/">
-      Cards
-  </a>
-</h2>
-<div class="card" style="width: 18rem;">
-  <img src="kirby.jpg"
-       class="card-img-top" alt="...">
-  <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-          Some quick example text to build on the card
-          title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-<link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
-<h2>Simple icons</h2>
+    <a href="https://getbootstrap.com/docs/5.1/components/card/">
+        Cards
+    </a>
+ </h2>
+ <div class="card" style="width: 18rem;">
+    <img src="../../images/starship.jpg"
+         class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">
+            Some quick example text to build on the card
+            title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+ </div>
+ 
+ <h2>Simple icons</h2>
 <i class="fa fa-cog"></i>
 <i class="fa fa-heart"></i>
 <i class="fa fa-share"></i>
@@ -658,8 +664,7 @@ rule referring to the P tags
 <i class="fa fa-image"></i>
 <i class="fa fa-chart-bar"></i>
 <i class="fa fa-calendar"></i>
-<i class="fa fa-smile"></i>   
-
+<i class="fa fa-smile"></i>
 <h2>Resizing icons</h2>
 <i class="fa fa-cog fa-2x"></i>
 <i class="fa fa-heart fa-2x"></i>
@@ -669,7 +674,6 @@ rule referring to the P tags
 <i class="fa fa-chart-bar fa-4x"></i>
 <i class="fa fa-calendar" style="font-size: 5em"></i>
 <i class="fa fa-smile" style="font-size: 3.5em"></i>
-
 <h2>Coloring icons</h2>
 <i class="fa fa-cog fa-2x" style="color: tomato"></i>
 <i class="fa fa-heart fa-2x" style="color: tomato"></i>
@@ -677,12 +681,10 @@ rule referring to the P tags
 <i class="fa fa-comment fa-3x" style="color: #19d49e"></i>
 <i class="fa fa-image fa-3x" style="color: rgb(234,123,12)"></i>
 <i class="fa fa-chart-bar fa-4x" style="color: rgb(123,234,123)"></i>
-
 <h2>Brand icons</h2>
 <i class="fab fa-twitter fa-2x"></i><br/>
 <i class="fab fa-facebook fa-2x"></i><br/>
-<i class="fab fa-apple fa-2x"></i><br/>
-
+<i class="fab fa-apple fa-2x"></i><br/> 
 <h2>Stacking icons</h2>
 <span class="fa-stack fa-2x">
 <i class="fas fa-square fa-stack-2x"></i>
@@ -696,7 +698,6 @@ rule referring to the P tags
 <i class="fas fa-camera fa-stack-1x"></i>
 <i class="fas fa-ban fa-stack-2x" style="color:Tomato"></i>
 </span><br/>
-
 <h2>Rotating icons</h2>
 <div class="fa-4x">
    <i class="fas fa-snowboarding"></i>
@@ -707,7 +708,6 @@ rule referring to the P tags
    <i class="fas fa-snowboarding fa-flip-vertical"></i><br/>
    <i class="fas fa-snowboarding fa-flip-both"></i><br/>
 </div>
-
 <h2>Animating icons</h2>
 <div class="fa-3x">
   <i class="fas fa-spinner fa-spin"></i>
@@ -717,6 +717,5 @@ rule referring to the P tags
   <i class="fas fa-spinner fa-pulse"></i>
   <i class="fas fa-stroopwafel fa-spin"></i>
 </div>
-
 </body>
 </html>

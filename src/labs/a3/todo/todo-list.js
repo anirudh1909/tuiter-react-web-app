@@ -1,5 +1,3 @@
-import React from "react";
-
 import TodoItem from "./todo-item";
 import todos from "./todos.json";
 const TodoList = () => {

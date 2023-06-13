@@ -3,50 +3,40 @@ import TuitSummaryList from "../tuit-summary-list";
 import { AiOutlineSearch } from "react-icons/ai";
 import { GoGear } from "react-icons/go";
 import "./index.css";
-
 function ExploreScreen() {
-  return (
-    <>
-      <div className="row">
-        <div className="col-11 position-relative">
-          <input
-            placeholder="Search Tuiter"
-            className="form-control rounded-pill ps-5"
-          />
-          <AiOutlineSearch className="fs-3 position-absolute wd-nudge-up" />
-        </div>
-        <div className="col-1">
-          <GoGear
-            className="wd-top-4 float-end fs-3 position-relative"
-          />
-        </div>
-      </div>
-      <ul className="nav nav-pills mb-2 mt-2">
-        <li className="nav-item">
-          <a className="nav-link active" href="/for-you">
-            For You
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/trending">
-            Trending
-          </a>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link" href="/news">
-            News
-          </a>
-        </li>
-      </ul>
-      <div className="position-relative mb-2">
-        <img src="/images/starship.jpg" className="w-100" alt="Starship" />
-        <h1 className="position-absolute wd-nudge-up text-white">
-          SpaceX Starship
-        </h1>
-      </div>
-      <TuitSummaryList />
-    </>
-  );
-}
-
+ return(
+   <>
+     <div className="row">
+       <div className="col-11 position-relative">
+         <input placeholder="Search Tuiter"
+                className="form-control rounded-pill ps-5"/>
+         <AiOutlineSearch className="fs-3 position-absolute 
+                       wd-nudge-up"/>
+       </div>
+       <div className="col-1">
+         <GoGear className="wd-top-4 float-end
+                       fs-3 position-relative"/>
+       </div>
+     </div>
+     <ul className="nav nav-pills mb-2 mt-2">
+       <li className="nav-item">
+         <a className="nav-link active">For You</a>
+       </li>
+       <li className="nav-item">
+         <a className="nav-link">Trending</a>
+       </li>
+       <li className="nav-item">
+         <a className="nav-link">News</a>
+       </li>
+     </ul>
+     <div className="position-relative mb-2">
+       <img src="https://www.reuters.com/resizer/S2QZTkoqSfT_OagpUN2LL5FX5j8=/960x0/filters:quality(80)/cloudfront-us-east-2.images.arcpublishing.com/reuters/TXDGVXPBEVMY5PA2RHRF2EA25Y.jpg" className="w-100"/>
+       <h1 className="position-absolute wd-nudge-up text-white">
+         SpaceX Starship</h1>
+     </div>
+     <TuitSummaryList/>
+   </>
+ );
+};
 export default ExploreScreen;
+//test2
