@@ -12,22 +12,20 @@ const Todos = () => {
      
        const deleteTodoClickHandler = (index) => {
         dispatch(deleteTodo(index))
-       }
-       
+       }       
        const createTodoClickHandler = () => {
          dispatch(addTodo(todo))
          setTodo({do: ''})
-       }
-      
+       }      
        const todoChangeHandler = (event) => {
          const doValue = event.target.value;
          const newTodo = {
            do: doValue
          };
          setTodo(newTodo);
-       }
-      
- return(
+       }      
+ 
+       return(
    <>
      <h3>Todos</h3>
      <ul className="list-group">
@@ -41,9 +39,8 @@ const Todos = () => {
          value={todo.do} className="form-control w-75"/>
      </li>
        {
-         todos.map((todo,index) =>
-           <li key={todo._id}
-           className="list-group-item">
+         todos.map((todo, index) =>
+           <li className="list-group-item">
                       <button onClick={() => 
            deleteTodoClickHandler(index)}
            className="btn btn-danger 
@@ -54,6 +51,7 @@ const Todos = () => {
             checked={todo.done}
             onChange={() => 
              toggleTodoDone(todo)}/>
+
 
              {todo.do}
            </li>)

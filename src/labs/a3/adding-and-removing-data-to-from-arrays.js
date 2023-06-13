@@ -1,5 +1,7 @@
+import React from "react";
+
 function AddingAndRemovingDataToFromArrays(){
-    let numberArray1 = [1, 2, 3, 4, 5];
+let numberArray1 = [1, 2, 3, 4, 5];
 let stringArray1 = ['string1', 'string2'];
 // adding new items
 numberArray1.push(6);
@@ -8,14 +10,13 @@ stringArray1.push('string3');
 // remove 1 item starting on 3rd spot
 numberArray1.splice(2, 1);
 stringArray1.splice(1, 1);
-
 return (
-    <>
-     <h3>Working with Arrays</h3>
-     numberArray1 = {numberArray1}<br/>
-     stringArray1 = {stringArray1}<br/>
-     </>
-   );
 
+    <>
+    <h2>Add and Remove Data to Arrays</h2>
+    numberArray1 = {numberArray1} <br />
+    stringArray1 = {stringArray1} <br />
+    </>
+);
 }
-export default AddingAndRemovingDataToFromArrays
+export default AddingAndRemovingDataToFromArrays;

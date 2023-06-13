@@ -29,3 +29,4 @@ export const profileThunk = createAsyncThunk(
       return user;
     }
   );
+  

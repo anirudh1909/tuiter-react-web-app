@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore | Tuiter</title>
+
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="../../vendors/bootstrap/css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/e3547b2bd6.js" vcrossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-2 col-1 col-sm-3 col-lg-2 col-2">
+          <div class="list-group">
+            <i class="fab fa-twitter fa-x list-group-item list-group-item-action" style="color: skyblue;">   </i>
+            <a href="../home.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-house" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Home</span></div></a>
+            <a href="index.html" class="list-group-item list-group-item-action active"><div class="d-flex align-items-center"><i class="fa-solid fa-hashtag" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Explore</span></div></a>
+            <a href="../notifications.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-bell" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Notifications</span></div></a>
+            <a href="../messages.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-envelope" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Messages</span></div></a>
+            <a href="../bookmarks/bookmarks-css.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-bookmark" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Bookmarks</span></div></a>
+            <a href="../lists.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-list" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Lists</span></div></a>
+            <a href="../profile.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fa-solid fa-user" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;Profile</span></div></a>
+            <a href="../more.html" class="list-group-item list-group-item-action"><div class="d-flex align-items-center"><i class="fas fa-ellipsis-h" width="16px" height="16px"></i><span class ="d-sm-none d-lg-none d-xl-block d-none">&nbsp;&nbsp;More</span></div></a>
+          </div>
+          <div class="btn-group-vertical w-100 mt-1" role="group">
+            <button type="button" class="btn btn-primary rounded-pill">Tweet</button>
+        </div>
+        </div>  
+          
+      <div class="col-md-8 col-sm-9 col-lg-6 col-10" >
+        <div class="input-group mb-3">
+  <input type="text" class="form-control rounded-pill" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search Tuiter">
+  <span class="wd-search-icon"><i class="fas fa-search"></i></span>
+  <span class="wd-settings-icon"><i class="fas fa-cog"></i></span>
+</div>
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">For You</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Trending</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">News</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sports</a>
+  </li>
+  <div class="d-sm-none d-xl-block d-md-inline-block d-none">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Entertainment</a>
+    </li>
+  </div>
+</ul>
+
+<div class="wd-image-container">
+  <img src="valo.jpg" alt="Tuiter Banner" class="img-fluid">
+  <h1 class="wd-image-text">ZOWIE Joins VCT Americas League!</h1>
+</div>
+
+        
+        <ul class="list-group">
+          <li class="list-group-item">
+            <span class="wd-trending-titles">Web Development</span><br>
+            <span class="wd-tuit-user">React.JS</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+            <span class="wd-trending-titles">-2h</span>
+            <div class="wd-text-tuit d-flex align-items-center">
+              <p class="fw-bold">ReactJS is a popular JavaScript library for building user interfaces. It provides a component-based approach to developing web applications, making it easier to create reusable and modular UI elements. ReactJS focuses on the concept of virtual DOM (Document Object Model), which allows for efficient rendering and updating of components.</p>
+              <img src="react.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+            </div>
+            <span class="wd-tuit-text">56.7K Tweets</span>
+          </li>
+          
+          <li class="list-group-item">
+            <span class="wd-trending-titles">Trending</span><br>
+            <span class="wd-tuit-user">JavaScript</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+            <span class="wd-trending-titles">-2h</span>
+            <div class="wd-text-tuit d-flex align-items-center">
+              <p class="fw-bold">JavaScript is a powerful programming language commonly used for web development. It was created in the mid-1990s by Brendan Eich at Netscape Communications. JavaScript is a versatile language that allows developers to add interactivity, dynamic content, and behavior to websites.</p>
+              <img src="js.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+            </div>
+            <span class="wd-tuit-text">26.4K Tweets</span>
+          </li>
+
+          <li class="list-group-item">
+            <span class="wd-trending-titles">Trending</span><br>
+            <span class="wd-tuit-user">jQuery</span>
+            <div class="wd-text-tuit d-flex align-items-center">
+              <p class="fw-bold">jQuery is a popular and widely used JavaScript library that simplifies HTML document traversal, event handling, and animation. It provides a concise and intuitive API for manipulating HTML elements, making it easier to create dynamic and interactive web pages.</p>
+              <img src="jquery.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+            </div>
+            <span class="wd-tuit-text">26.4K Tweets</span>
+          </li>
+
+          <li class="list-group-item">
+            <span class="wd-trending-titles">Trending</span><br>
+            <span class="wd-tuit-user">NodeJS</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+            <span class="wd-trending-titles">-2h</span>
+            <div class="wd-text-tuit d-flex align-items-center">
+              <p class="fw-bold">Node.js is a powerful and popular runtime environment that allows developers to build server-side and network applications using JavaScript. It is built on the Chrome V8 JavaScript engine and provides an event-driven, non-blocking I/O model that makes it lightweight and efficient.</p>
+              <img src="node.png" alt="Image 1" class="wd-list-item-image" style="width: 65px; height: 65px; margin-left: auto;">
+            </div>
+            <span class="wd-tuit-text">26.4K Tweets</span>
+          </li>
+        </ul>
+      </div>
+      
+      
+      <div class="col-md-3 col-xl-35 col-lg-4">
+        <div class ="d-sm-none d-xl-block d-lg-block d-md-none d-xxl-block  d-none">
+        <ul class="list-group">
+          <li class="list-group-item d-flex align-items-center">
+              <span class="fw-bold" >Who to Follow</span>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <div class="wd-avatar">
+            </div>            
+            <div class="flex-grow-1 ms-3">
+              <span class="fw-bold">Koyo</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+              <br><span class = "wd-userid">@koyo</span>
+            </div>
+            <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <div class="wd-avatar2"></div>
+            <div class="flex-grow-1 ms-3">
+              <span class="fw-bold">Sada</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+              <br><span class="wd-userid">@sada</span>
+            </div>
+            <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+          </li>
+          <li class="list-group-item d-flex align-items-center">
+            <div class="wd-avatar3"></div>
+            <div class="flex-grow-1 ms-3">
+              <span class="fw-bold">Alice</span><svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M10.5213 2.62368C11.3147 1.75255 12.6853 1.75255 13.4787 2.62368L14.4989 3.74391C14.8998 4.18418 15.4761 4.42288 16.071 4.39508L17.5845 4.32435C18.7614 4.26934 19.7307 5.23857 19.6757 6.41554L19.6049 7.92905C19.5771 8.52388 19.8158 9.10016 20.2561 9.50111L21.3763 10.5213C22.2475 11.3147 22.2475 12.6853 21.3763 13.4787L20.2561 14.4989C19.8158 14.8998 19.5771 15.4761 19.6049 16.071L19.6757 17.5845C19.7307 18.7614 18.7614 19.7307 17.5845 19.6757L16.071 19.6049C15.4761 19.5771 14.8998 19.8158 14.4989 20.2561L13.4787 21.3763C12.6853 22.2475 11.3147 22.2475 10.5213 21.3763L9.50111 20.2561C9.10016 19.8158 8.52388 19.5771 7.92905 19.6049L6.41553 19.6757C5.23857 19.7307 4.26934 18.7614 4.32435 17.5845L4.39508 16.071C4.42288 15.4761 4.18418 14.8998 3.74391 14.4989L2.62368 13.4787C1.75255 12.6853 1.75255 11.3147 2.62368 10.5213L3.74391 9.50111C4.18418 9.10016 4.42288 8.52388 4.39508 7.92905L4.32435 6.41553C4.26934 5.23857 5.23857 4.26934 6.41554 4.32435L7.92905 4.39508C8.52388 4.42288 9.10016 4.18418 9.50111 3.74391L10.5213 2.62368Z" stroke="currentColor" stroke-width="1.5"/> <path d="M9 12L11 14L15 10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+              <br><span class="wd-userid">@alice</span>
+            </div>
+            <button class="btn btn-primary rounded-pill btn-follow">Follow</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="../../vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

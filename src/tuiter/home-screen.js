@@ -1,14 +1,14 @@
 import React from "react";
-import TuitsList from "./tuits/tuit-list";
+import TuitsList from "../tuiter/tuit/tuit-list";
 import WhatsHappening from "./whats-happening";
 
 const HomeScreen = () => {
- return(
-   <>
-     <h4>Home</h4>
-     <WhatsHappening/>
-     <TuitsList/>
-   </>
- );
+  return (
+    <>
+      <WhatsHappening />
+      <TuitsList />
+    </>
+  );
 };
+
 export default HomeScreen;
