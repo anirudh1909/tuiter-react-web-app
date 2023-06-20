@@ -1,0 +1,136 @@
+.tuit-bookmark-heading {
+    position: relative;
+    margin-left: 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    color: black;
+  }
+ .other-Page {
+    color: grey;
+    text-decoration: none;
+    
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+  }
+  
+  .photo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .name {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .id-date {
+    color: grey;
+    display: inline-block;
+    margin-left: 10px;
+  }
+  .grey-txt{
+    color:grey;
+  }
+  
+  .caption {
+    grid-column: 2;
+    color: black;
+  }.rounded-corners-all-around {
+    margin-left: 45px;
+    border-radius: 20px;
+    display: inline-block;
+  }
+  
+  .border-thin {
+    border-width: 2px; /* Reduce the border width */
+  }
+  
+  .border-blue {
+    border-color: gray;
+  }
+  
+  .border-solid {
+    border-style: solid;
+    width: 400px;
+  }
+  
+  .padding-fat {
+    padding: 0 100px 0 0; /* Push the padding to the right slightly */
+  }
+  
+  .content-container {
+    display: flex;
+  }
+  
+  .content-image {
+    width: 500px;
+    height: 70%;
+    object-fit: contain;
+    margin-right: -2px; /* Adjust the margin to close the border with the image */
+  }
+  
+  .content-text {
+    margin: 0;
+    padding: 10px;
+    flex-grow: 1;
+  }
+  
+  .rounded-corners-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  
+.tab-list {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 65px;
+  }
+  
+  .tab-item {
+    cursor: pointer;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .tab-text {
+    font-weight: bold;
+  }
+  
+  .tab-underline {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  
+  .tab-item.selected .tab-underline {
+    transform: scaleX(1);
+  }
+  
+  .wd-img-txt {
+    position: relative;
+    margin-top: -55px;
+    color: white;
+  }
+  
